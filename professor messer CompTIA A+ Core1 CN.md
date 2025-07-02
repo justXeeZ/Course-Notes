@@ -313,3 +313,56 @@ sometimes mobiles are used for synchorization, backup and identification
 - it builds on the RFID which is mostly one way to be a two way wireless communication
 - used heavily in payment systems
 - NFC can help in bluetooth pairing
+
+## network services
+
+### DNS server
+- Domain Name System converts names to IPAs and vice versa
+- the load is balanced accross many different servers and often managed by your Internet Service Provider (ISP)
+
+### DHCP server
+- Dynamic Host Configuration Protocol automatically configures IPAs
+- Enterprise DHCP will be redundant to offer more stability
+
+### file share
+- you will often be using a standard system of file management like Server Message Block (SMB) if you have a windows environment or Apple Filing Protocol (AFP) if you have apple
+- the front-end hides the protocol anyway lol
+
+### print server
+- the software that manages the printer maybe is in a computer that the printer is connected to or a card that slides into the priner or built in that provides the network adapter and software
+- printers use standard printing protocols like SMB, Internet Printing Protocol (IPP), Line Printer Daemon (LPD)
+
+### mail server
+- usually managed by your ISP or sometimes your enterprise IT department due to its complex set of requirements
+- it is one of the most important services so expect a 24 by 7 support
+
+### Syslog
+- you often want to consolidate all your log files into a central database, that happens with a protocol called Syslog
+- logs end up on a Security Information and Event Manager (SIEM) server so you are going to need A LOT of disk space
+
+### web server
+- uses the standard web browsing protocols HTTP/HTTPS
+- developers build the websites in Hyper Text Markup Language HTML/HTML5 protocols, your browser downloads the HTML files and renders the graphical interface to you
+
+### authentication server
+- when you enter your email and password you are interacting with an Authenticaion, Authorization and Accounting (AAA) server
+- almost always an enterprise service as it is not that required on home networks, also as email servers, it is even a more important service that needs to be on a set of redundant servers, so if one fails, the other kick starts
+
+### database servers
+- the information is stored in table storages (rows and columns) similar to a spreadsheet
+- in a realtional data base, tables are linked together and there are links between inforamtion inside tables and this is called relationships which is flexible and fast
+- a standard language used for retreiving and storing data is Structured Query Language (SQL)
+
+### Network Time Protocol (NTP) Serber
+- encryption, logins, backup, log timestamps all need to work from the same clock so accuracy is a top priority
+- the NTP client (your computer) requsts time updates from an NTP server that responds to the time requestes, daily synchronization happes to ensure high accuracy
+
+### span gateways
+- the spam gateways stops emails before reaching the mail server and evaluates them then categorizes them accordingly so that spam email ends up in a designated folder, note that this process is not 100% accurate, and it can be a site or a cloud based process
+
+### All in one security appliance
+- can be called a Next-generation firewall, Untifies Threat Management (UTM) or Web security gateway
+- it offers URL filter/ content inspection, malware inspection, spam filter, Channel/Data Service Unit (CSU/DSU), Router, Switch, Firewall, Intrusion Dtection/ Prevention System (IDS/IPS), Bandwidth shapper and a Virtual Private Network (VPN)
+
+### load balancers
+
